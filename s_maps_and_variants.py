@@ -86,7 +86,7 @@ SS_uni = np.column_stack([X_noisy[valid_idx - i*tau] for i in range(E)])
 SS_multi = np.column_stack([X_noisy[valid_idx], Y_noisy[valid_idx], Z_noisy[valid_idx]])
 
 # Targets
-Target_future = X_noisy[valid_idx + tp]         # 1D Target (for Univariate & Viz)
+Target_future = X_noisy[valid_idx + tp]         # 1D Target
 True_future = X_true[valid_idx + tp]
 
 # 3D Targets for Multivariate Autonomous Forecasting
